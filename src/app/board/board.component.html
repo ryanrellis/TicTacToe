@@ -4,7 +4,7 @@
 
 <button nbButton outline status="danger" (click)="newGame()">New Game</button>
 </div>
-<h2>Winner: <span *ngIf="winner">Player {{ winner }} !</span></h2>
+<h2 *ngIf="winner">Player {{ winner }} Wins!</h2>
 
 <main>
   <app-square
